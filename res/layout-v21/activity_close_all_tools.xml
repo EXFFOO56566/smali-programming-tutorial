@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/app_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/tool_bar" layout="@layout/toolbar" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/textColor" android:id="@id/txtNoMoreIssue" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="No issue" android:layout_centerInParent="true" android:textAlignment="center" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/adView" android:layout_below="@id/tool_bar">
+        <RelativeLayout android:id="@id/loutIssues" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/NativeAdContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="8.0dip" />
+            <android.support.v7.widget.CardView android:id="@id/LocationCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_below="@id/NativeAdContainer" android:backgroundTint="@color/white">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/Rlout_top" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/app_color_Dark" android:id="@id/TxtTitleLocation" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2x Fast Charger" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textColor" android:id="@id/txtDicLocation" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable location service and your battery will charge 2x faster" android:layout_below="@id/TxtTitleLocation" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/Rlout_action" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/Rlout_top">
+                        <Button android:textColor="@color/textColor" android:id="@id/LocationTurnOff" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Turn Off Location" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:id="@id/AroplaneCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/LocationCardView" android:backgroundTint="@color/white">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/Rlout_top_Aroplane" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/app_color_Dark" android:id="@id/TxtTitleAroplane" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3x Fast Charger" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textColor" android:id="@id/txtDicAroplane" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Enable airplane mode and your battery will charge 3x faster" android:layout_below="@id/TxtTitleAroplane" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/Rlout_action1" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/Rlout_top_Aroplane">
+                        <Button android:textColor="@color/textColor" android:id="@id/AroplaneTurnOn" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Turn on airplane mode" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView android:id="@id/MoblieDataCardView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:layout_below="@id/AroplaneCardView" android:backgroundTint="@color/white">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/Rlout_top_MoblieData" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/app_color_Dark" android:id="@id/TxtTitleMobileData" android:paddingLeft="16.0dip" android:paddingTop="24.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2x Fast Charger" android:layout_alignParentLeft="true" />
+                        <TextView android:textSize="14.0sp" android:textColor="@color/textColor" android:id="@id/txtDicMobileData" android:paddingLeft="16.0dip" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disable mobile data and your battery will charge 2x faster" android:layout_below="@id/TxtTitleMobileData" android:layout_alignParentLeft="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/Rlout_action2" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/Rlout_top_MoblieData">
+                        <Button android:textColor="@color/textColor" android:id="@id/MoblieDataTurnOff" android:background="?android:selectableItemBackground" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:text="Turn Off Mobile Data" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView android:id="@id/adView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" ads:adSize="BANNER" ads:adUnitId="@string/banner" />
+</RelativeLayout>

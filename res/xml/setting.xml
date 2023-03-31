@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.codecanyon.fast.charging.prefrence.mPreferenceCatagory android:textColor="#fff44336" android:title="About Application">
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="More Application" android:key="MoreApp" android:summary="Get more application from Fast Battery Charger 5X" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Rate 5 Star" android:key="RateUs" android:summary="Do you have a few seconds to rate this app? We want to hear your opinion" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Recommend to friends" android:key="ShareApp" android:summary="Can you please help us to spread in the world about Fast Battery Charger 5X" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="About us" android:key="About" android:summary="About fast battery charger" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Feedback" android:key="FeedBack" android:summary="Please give us feedback and any suggetion about Fast Battery Charger 5X" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Version" android:key="Version" android:summary="0.0.0" />
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Update" android:key="Update" android:summary="Check for new update" />
+    </com.codecanyon.fast.charging.prefrence.mPreferenceCatagory>
+    <com.codecanyon.fast.charging.prefrence.mPreferenceCatagory android:textColor="#fff44336" android:title="Licence">
+        <com.codecanyon.fast.charging.prefrence.mPreference android:title="Licence" android:key="Licence" android:summary="Licence" />
+    </com.codecanyon.fast.charging.prefrence.mPreferenceCatagory>
+</PreferenceScreen>
